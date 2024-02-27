@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -19,13 +20,34 @@
             padding: 10px;
         }
 
-        thead{
+        thead, tfoot{
             background-color: gray;
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         td.num{
             text-align: right;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightcyan;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -33,10 +55,11 @@
     <h1>Uso de tabelas grandes</h1>
 
     <table>
+        <caption>População das UF</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -52,14 +75,121 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">17.000.000</td>
             </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">10.000.000</td>
+            </tr>
+
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>0000</strong></td>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro debitis corrupti voluptates! Dolor fugit molestiae sequi recusandae, est debitis quas et quisquam eligendi ex optio minima repellat sapiente sunt quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi placeat numquam voluptatibus architecto facilis rerum in debitis ab totam, eligendi animi dignissimos dolore alias accusantium. Ipsam quibusdam quae quod similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, assumenda, similique quibusdam impedit, quasi doloribus ratione repellat tenetur quae inventore veritatis ea iste molestiae quod minus sunt officia? Maxime, fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aspernatur velit recusandae sunt ipsum praesentium accusantium veniam corporis aut perferendis eligendi perspiciatis quam, necessitatibus cum possimus doloremque quaerat aperiam culpa? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto perspiciatis laborum voluptatem amet praesentium recusandae qui dolorum alias repellat excepturi, pariatur ex aperiam! Veritatis sint saepe quam ab excepturi aspernatur.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro debitis corrupti voluptates! Dolor fugit molestiae sequi recusandae, est debitis quas et quisquam eligendi ex optio minima repellat sapiente sunt quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi placeat numquam voluptatibus architecto facilis rerum in debitis ab totam, eligendi animi dignissimos dolore alias accusantium. Ipsam quibusdam quae quod similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, assumenda, similique quibusdam impedit, quasi doloribus ratione repellat tenetur quae inventore veritatis ea iste molestiae quod minus sunt officia? Maxime, fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aspernatur velit recusandae sunt ipsum praesentium accusantium veniam corporis aut perferendis eligendi perspiciatis quam, necessitatibus cum possimus doloremque quaerat aperiam culpa? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto perspiciatis laborum voluptatem amet praesentium recusandae qui dolorum alias repellat excepturi, pariatur ex aperiam! Veritatis sint saepe quam ab excepturi aspernatur.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro debitis corrupti voluptates! Dolor fugit molestiae sequi recusandae, est debitis quas et quisquam eligendi ex optio minima repellat sapiente sunt quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi placeat numquam voluptatibus architecto facilis rerum in debitis ab totam, eligendi animi dignissimos dolore alias accusantium. Ipsam quibusdam quae quod similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, assumenda, similique quibusdam impedit, quasi doloribus ratione repellat tenetur quae inventore veritatis ea iste molestiae quod minus sunt officia? Maxime, fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aspernatur velit recusandae sunt ipsum praesentium accusantium veniam corporis aut perferendis eligendi perspiciatis quam, necessitatibus cum possimus doloremque quaerat aperiam culpa? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto perspiciatis laborum voluptatem amet praesentium recusandae qui dolorum alias repellat excepturi, pariatur ex aperiam! Veritatis sint saepe quam ab excepturi aspernatur.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro debitis corrupti voluptates! Dolor fugit molestiae sequi recusandae, est debitis quas et quisquam eligendi ex optio minima repellat sapiente sunt quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi placeat numquam voluptatibus architecto facilis rerum in debitis ab totam, eligendi animi dignissimos dolore alias accusantium. Ipsam quibusdam quae quod similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, assumenda, similique quibusdam impedit, quasi doloribus ratione repellat tenetur quae inventore veritatis ea iste molestiae quod minus sunt officia? Maxime, fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aspernatur velit recusandae sunt ipsum praesentium accusantium veniam corporis aut perferendis eligendi perspiciatis quam, necessitatibus cum possimus doloremque quaerat aperiam culpa? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto perspiciatis laborum voluptatem amet praesentium recusandae qui dolorum alias repellat excepturi, pariatur ex aperiam! Veritatis sint saepe quam ab excepturi aspernatur.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro debitis corrupti voluptates! Dolor fugit molestiae sequi recusandae, est debitis quas et quisquam eligendi ex optio minima repellat sapiente sunt quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi placeat numquam voluptatibus architecto facilis rerum in debitis ab totam, eligendi animi dignissimos dolore alias accusantium. Ipsam quibusdam quae quod similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, assumenda, similique quibusdam impedit, quasi doloribus ratione repellat tenetur quae inventore veritatis ea iste molestiae quod minus sunt officia? Maxime, fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aspernatur velit recusandae sunt ipsum praesentium accusantium veniam corporis aut perferendis eligendi perspiciatis quam, necessitatibus cum possimus doloremque quaerat aperiam culpa? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto perspiciatis laborum voluptatem amet praesentium recusandae qui dolorum alias repellat excepturi, pariatur ex aperiam! Veritatis sint saepe quam ab excepturi aspernatur.</p>
     
 </body>
 </html>

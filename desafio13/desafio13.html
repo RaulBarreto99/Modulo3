@@ -64,6 +64,14 @@
             border: 1px solid black;
             padding: 10px;
         }
+
+        col.carea{
+            background-color: aqua;
+        }
+
+        .cnota{
+            background-color: red;
+        }
     </style>
 </head>
 <body>
@@ -138,6 +146,14 @@
 
     <h1 style="margin-top: 50px;">Tabela 3</h1>
     <table class="tabela3">
+
+        <colgroup>
+            <col class="carea">
+            <col class="cdis">
+            <col class="cnota" span="2">
+            <col class="cmedia">
+        </colgroup>
+
         <thead>
             <tr>
                 <th rowspan="2" scope="col">Área</th>
